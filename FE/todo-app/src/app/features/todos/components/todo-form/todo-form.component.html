@@ -1,0 +1,24 @@
+<div class="add-todo-form">
+  <input
+    type="text"
+    placeholder="What needs to be done?"
+    [(ngModel)]="newTodoTitle"
+    (keyup.enter)="addTodo()"
+    [disabled]="todoStore().isAdding()"
+  />
+  <button (click)="addTodo()" [disabled]="todoStore().isAdding()">
+    @if (todoStore().isAdding()) {
+      <div class="mini-spinner"></div>
+      Adding...
+    } @else {
+      Add
+    }
+  </button>
+</div>
+
+@if (todoStore().error()) {
+  <div class="error-message">
+    <p>{{ todoStore().error() }}</p>
+    <button (click)="clearError()">Dismiss</button>
+  </div>
+}

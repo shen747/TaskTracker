@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\todoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:todoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\domain\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:domain\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\data\\inmemorydatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:data\\inmemorydatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\features\\todos\\queries\\gettodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:features\\todos\\queries\\gettodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\features\\todos\\commands\\deletetodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:features\\todos\\commands\\deletetodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F53965E-5AD0-4436-9561-F75326B5A199}|..\\TodoApi.Test\\TodoApi.Test.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi.test\\todoapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|e:\\workdir\\coding-interviews\\rms\\tasktracker\\be\\todoapi\\features\\todos\\commands\\addtodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EAEB1E1-E24F-4A0F-83F5-03600C4F97F7}|TodoApi.csproj|solutionrelative:features\\todos\\commands\\addtodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TodoApiTest.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi.Test\\TodoApiTest.cs",
+              "RelativeDocumentMoniker": "..\\TodoApi.Test\\TodoApiTest.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi.Test\\TodoApiTest.cs",
+              "RelativeToolTip": "..\\TodoApi.Test\\TodoApiTest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T03:51:59.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteTodo.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Commands\\DeleteTodo.cs",
+              "RelativeDocumentMoniker": "Features\\Todos\\Commands\\DeleteTodo.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Commands\\DeleteTodo.cs",
+              "RelativeToolTip": "Features\\Todos\\Commands\\DeleteTodo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T02:13:51.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddTodo.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Commands\\AddTodo.cs",
+              "RelativeDocumentMoniker": "Features\\Todos\\Commands\\AddTodo.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Commands\\AddTodo.cs",
+              "RelativeToolTip": "Features\\Todos\\Commands\\AddTodo.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowB8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:14:44.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetTodos.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Queries\\GetTodos.cs",
+              "RelativeDocumentMoniker": "Features\\Todos\\Queries\\GetTodos.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Features\\Todos\\Queries\\GetTodos.cs",
+              "RelativeToolTip": "Features\\Todos\\Queries\\GetTodos.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T07:11:08.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InMemoryDataStore.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Data\\InMemoryDataStore.cs",
+              "RelativeDocumentMoniker": "Data\\InMemoryDataStore.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Data\\InMemoryDataStore.cs",
+              "RelativeToolTip": "Data\\InMemoryDataStore.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwA8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T06:59:36.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Domain\\TodoItem.cs",
+              "RelativeDocumentMoniker": "Domain\\TodoItem.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Domain\\TodoItem.cs",
+              "RelativeToolTip": "Domain\\TodoItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T06:57:45.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoApi.csproj",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\TodoApi.csproj",
+              "RelativeDocumentMoniker": "TodoApi.csproj",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\TodoApi.csproj",
+              "RelativeToolTip": "TodoApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-19T06:55:47.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\WorkDir\\Coding-Interviews\\RMS\\TaskTracker\\BE\\TodoApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T06:55:20.384Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
