@@ -1,0 +1,74 @@
+<!-- Error Message Display -->
+@if (todoStore().error()) {
+  <div class="error-message">
+    <p>{{ todoStore().error() }}</p>
+    <button (click)="loadTodos()">Retry</button>
+  </div>
+}
+
+<!-- Loading Indicator -->
+@if (todoStore().isLoading()) {
+  <div class="loading-message">
+    <div class="loading-spinner"></div>
+    <p>Loading todos...</p>
+  </div>
+}
+
+<ul class="todo-list">
+  @for (todo of todoStore().todos(); track todo.id) {
+    <li class="todo-item" [class.completed]="todo.isCompleted" [class.editing]="isEditing(todo.id)">
+      @if (isEditing(todo.id)) {
+        <!-- Edit Mode -->
+        <div class="edit-container">
+          <input
+            type="text"
+            [(ngModel)]="editTitle"
+            class="edit-input"
+            (keyup.enter)="saveEdit(todo)"
+            (keyup.escape)="cancelEdit()"
+            #editInput
+            (click)="$event.stopPropagation()"
+          />
+          <div class="edit-actions">
+            <button class="save-btn" (click)="saveEdit(todo)" [disabled]="isUpdating(todo.id)">
+              @if (isUpdating(todo.id)) {
+                <div class="mini-spinner"></div>
+              } @else {
+                ✓
+              }
+            </button>
+            <button class="cancel-btn" (click)="cancelEdit()" [disabled]="isUpdating(todo.id)">
+              ✕
+            </button>
+          </div>
+        </div>
+      } @else {
+        <!-- Display Mode -->
+        <div class="todo-content">
+          <span class="todo-title" (click)="toggleCompletion(todo)" [class.updating]="isUpdating(todo.id)">
+            @if (isUpdating(todo.id)) {
+              <div class="inline-spinner"></div>
+            }
+            {{ todo.title }}
+          </span>
+          <div class="todo-actions">
+            <button class="edit-btn" (click)="startEdit(todo, $event)" [disabled]="isUpdating(todo.id)">
+              ✏️
+            </button>
+            <button class="delete-btn" (click)="deleteTodo(todo.id)" [disabled]="isDeleting(todo.id) || isUpdating(todo.id)">
+              @if (isDeleting(todo.id)) {
+                <div class="mini-spinner"></div>
+              } @else {
+                ✕
+              }
+            </button>
+          </div>
+        </div>
+      }
+    </li>
+  } @empty {
+    @if (!todoStore().isLoading() && !todoStore().error()) {
+      <p class="empty-list-message">Your list is empty. Add a new TODO to get started!</p>
+    }
+  }
+</ul>

@@ -1,0 +1,211 @@
+@Todo.API_HostAddress = http://localhost:5279
+
+### ===========================================
+### SWAGGER DOCUMENTATION ENDPOINTS
+### ===========================================
+
+### Get Swagger UI
+GET {{Todo.API_HostAddress}}/swagger
+
+###
+
+### Get OpenAPI JSON for V1
+GET {{Todo.API_HostAddress}}/swagger/v1/swagger.json
+
+###
+
+### Get OpenAPI JSON for V2
+GET {{Todo.API_HostAddress}}/swagger/v2/swagger.json
+
+###
+
+### ===========================================
+### VERSIONED ENDPOINTS (api/v1/todos)
+### ===========================================
+
+### Get all todos (v1)
+GET {{Todo.API_HostAddress}}/api/v1/todos
+Accept: application/json
+
+###
+
+### Get all todos (query string version)
+GET {{Todo.API_HostAddress}}/api/todos?version=1.0
+Accept: application/json
+
+###
+
+### Get all todos (header version)
+GET {{Todo.API_HostAddress}}/api/todos
+Accept: application/json
+X-Version: 1.0
+
+###
+
+### Get todo by ID (existing)
+GET {{Todo.API_HostAddress}}/api/v1/todos/1
+Accept: application/json
+
+###
+
+### Get todo by ID (non-existent)
+GET {{Todo.API_HostAddress}}/api/v1/todos/999
+Accept: application/json
+
+###
+
+### Create a new todo
+POST {{Todo.API_HostAddress}}/api/v1/todos
+Content-Type: application/json
+
+{
+  "title": "Test Todo from HTTP Client v1"
+}
+
+###
+
+### Create a new todo with long title
+POST {{Todo.API_HostAddress}}/api/v1/todos
+Content-Type: application/json
+
+{
+  "title": "This is a very long todo title that tests how the API handles longer input strings"
+}
+
+###
+
+### Create a new todo (empty title - should fail)
+POST {{Todo.API_HostAddress}}/api/v1/todos
+Content-Type: application/json
+
+{
+  "title": ""
+}
+
+###
+
+### Update a todo (existing)
+PUT {{Todo.API_HostAddress}}/api/v1/todos/1
+Content-Type: application/json
+
+{
+  "title": "Updated Todo from HTTP Client v1",
+  "isCompleted": true
+}
+
+###
+
+### Update a todo (mark as incomplete)
+PUT {{Todo.API_HostAddress}}/api/v1/todos/2
+Content-Type: application/json
+
+{
+  "title": "Marked as Incomplete",
+  "isCompleted": false
+}
+
+###
+
+### Update a todo (non-existent - should fail)
+PUT {{Todo.API_HostAddress}}/api/v1/todos/999
+Content-Type: application/json
+
+{
+  "title": "Non-existent Todo",
+  "isCompleted": true
+}
+
+###
+
+### Update a todo (empty title - should fail)
+PUT {{Todo.API_HostAddress}}/api/v1/todos/1
+Content-Type: application/json
+
+{
+  "title": "",
+  "isCompleted": true
+}
+
+###
+
+### Delete a todo (existing)
+DELETE {{Todo.API_HostAddress}}/api/v1/todos/1
+
+###
+
+### Delete a todo (non-existent - should fail)
+DELETE {{Todo.API_HostAddress}}/api/v1/todos/999
+
+###
+
+### ===========================================
+### BACKWARD COMPATIBILITY (api/todos)
+### ===========================================
+
+### Get all todos (default version - backward compatibility)
+GET {{Todo.API_HostAddress}}/api/todos
+Accept: application/json
+
+###
+
+### Create a new todo (default version)
+POST {{Todo.API_HostAddress}}/api/todos
+Content-Type: application/json
+
+{
+  "title": "Test Todo from HTTP Client (default version)"
+}
+
+###
+
+### ===========================================
+### V2 ENDPOINTS (api/v2/todos)
+### ===========================================
+
+### Get all todos (v2 - with enhanced metadata)
+GET {{Todo.API_HostAddress}}/api/v2/todos
+Accept: application/json
+
+###
+
+### Get todo by ID (v2 - with enhanced response)
+GET {{Todo.API_HostAddress}}/api/v2/todos/1
+Accept: application/json
+
+###
+
+### Create a new todo (v2 - with enhanced validation)
+POST {{Todo.API_HostAddress}}/api/v2/todos
+Content-Type: application/json
+
+{
+  "title": "Test Todo from HTTP Client v2"
+}
+
+###
+
+### Create a new todo (v2 - long title validation)
+POST {{Todo.API_HostAddress}}/api/v2/todos
+Content-Type: application/json
+
+{
+  "title": "This is an extremely long todo title that exceeds the 500 character limit set in version 2 of the API to demonstrate enhanced validation features and show how the API can evolve over time with better validation and error handling capabilities"
+}
+
+###
+
+### Update a todo (v2 - with enhanced validation)
+PUT {{Todo.API_HostAddress}}/api/v2/todos/1
+Content-Type: application/json
+
+{
+  "title": "Updated Todo from HTTP Client v2",
+  "isCompleted": true
+}
+
+###
+
+### Delete a todo (v2 - with enhanced response)
+DELETE {{Todo.API_HostAddress}}/api/v2/todos/1
+
+###
